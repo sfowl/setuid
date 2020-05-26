@@ -6,7 +6,7 @@ Release:        2
 Summary:        setuid binary to root
 
 License:        AGPLv3
-URL:            https://git.prodsec.redhat.com/sfowler/recompile
+URL:            https://real.address.not.fake
 Source0:        %{name}-%{version}.tar.gz
 BuildArch:      x86_64
 
