@@ -18,5 +18,5 @@ rpmdev-setuptree || ( echo '"rpmdevtools" required' && exit 1 )
 git archive --format=tar.gz --prefix="$NV"/ HEAD:src/ > "$SRCDIR/$NV.tar.gz"
 
 rpmbuild -ba $SPECFILE
-cp "$RPMDIR"/*/$NV*.noarch.rpm .
+cp "$RPMDIR"/*/$NV*.x86_64.rpm .
 cp "$SRPMDIR"/$NV*.src.rpm .
