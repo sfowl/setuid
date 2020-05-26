@@ -12,7 +12,7 @@ RPMDIR=$(rpm --eval "%{_rpmdir}")
 SRPMDIR=$(rpm --eval "%{_srcrpmdir}")
 SRCDIR=$(rpm --eval "%{_sourcedir}")
 # NV=$(rpmspec -q --qf "%{name}-%{version}" $SPECFILE)
-NV=setuid-0.0.1-2
+NV=setuid-0.0.1
 rpmdev-setuptree || ( echo '"rpmdevtools" required' && exit 1 )
 
 git archive --format=tar.gz --prefix="$NV"/ HEAD:src/ > "$SRCDIR/$NV.tar.gz"
